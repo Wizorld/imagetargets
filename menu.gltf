@@ -3,6 +3,9 @@
         "generator" : "Khronos glTF Blender I/O v1.3.48",
         "version" : "2.0"
     },
+    "extensionsUsed" : [
+        "KHR_materials_unlit"
+    ],
     "scene" : 0,
     "scenes" : [
         {
@@ -56,19 +59,15 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "emissiveFactor" : [
-                0,
-                0,
-                0
-            ],
+            "extensions" : {
+                "KHR_materials_unlit" : {}
+            },
             "name" : "menu material",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0,
                     "texCoord" : 0
-                },
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.4094488322734833
+                }
             }
         }
     ],
@@ -91,7 +90,6 @@
     ],
     "textures" : [
         {
-            "sampler" : 0,
             "source" : 0
         }
     ],
@@ -174,14 +172,6 @@
             "buffer" : 0,
             "byteLength" : 970380,
             "byteOffset" : 1224
-        }
-    ],
-    "samplers" : [
-        {
-            "magFilter" : 9729,
-            "minFilter" : 9986,
-            "wrapS" : 33071,
-            "wrapT" : 33071
         }
     ],
     "buffers" : [
